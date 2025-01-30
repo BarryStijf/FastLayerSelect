@@ -34,6 +34,34 @@ Een **AutoCAD Laagwissel-script** waarmee je eenvoudig lagen kunt wisselen en ob
 | `g13` | Groep_13 | Verander de actieve laag of verplaats geselecteerde objecten |
 | `g14` | Groep_14 | Verander de actieve laag of verplaats geselecteerde objecten |
 
+## 🔧 Aanpassen van de lagen (`g`-commando's)
+Wil je andere laagnamen gebruiken voor de `g0` t/m `g14` commando’s? Dit is eenvoudig aan te passen in de **AutoLISP-code**.
+
+### Stap 1: Open het `.lsp` bestand  
+Gebruik een **teksteditor** zoals **Notepad++**, **VS Code** of **AutoCAD's eigen LISP-editor**.
+
+### Stap 2: Zoek de lijst met commando's  
+In de code staat een sectie met de `g`-commando’s zoals dit:
+```lisp
+(defun C:g1 () (ChangeLayer "Groep_1"))
+(defun C:g2 () (ChangeLayer "Groep_2"))
+(defun C:g3 () (ChangeLayer "Groep_3"))
+(defun C:g4 () (ChangeLayer "Groep_4"))
+
+###Stap 3: Pas de laagnamen aan
+Verander "Groep_1", "Groep_2", enz. naar je eigen lagen. Bijvoorbeeld:
+```lisp
+(defun C:g1 () (ChangeLayer "Architectuur"))
+(defun C:g2 () (ChangeLayer "Elektriciteit"))
+(defun C:g3 () (ChangeLayer "Waterleidingen"))
+(defun C:g4 () (ChangeLayer "Verwarming"))
+
+###Stap 4: Sla het bestand op en laad het opnieuw in AutoCAD
+Sla het .lsp bestand op.
+Typ AP in AutoCAD en herlaad het script.
+Test je nieuwe g-commando's!
+✅ Je hebt nu je eigen lagen gekoppeld aan de commando's! 🚀
+
 ## 📜 Licentie
 Dit project valt onder de **MIT-licentie**.  
 Je mag dit script gebruiken en aanpassen, zolang je mij als originele maker vermeldt.  
