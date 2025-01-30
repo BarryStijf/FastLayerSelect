@@ -15,10 +15,24 @@ Een **AutoCAD Laagwissel-script** waarmee je eenvoudig lagen kunt wisselen en ob
 3. Typ een `g(nummer)`-commando in de AutoCAD command-line.  
 
 ## 📌 Commando’s
-| **Commando** | **Functie** |
-|-------------|------------|
-| `g0` - `g14` | Verander de actieve laag of verplaats geselecteerde objecten |
-| `y` | Wisselt tussen de laatste twee lagen |
+| **Commando** | **Layer** | **Functie** |
+|-------------|------------|------------|
+| `y` | Universeel | Wisselt tussen de laatste twee lagen |
+| `g0` | 0 |Verander de actieve laag of verplaats geselecteerde objecten |
+| `g1` | Groep_1 |Layer |Verander de actieve laag of verplaats geselecteerde objecten |
+| `g2` | Groep_2 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g3` | Groep_3 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g4` | Groep_4 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g5` | Groep_5 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g6` | Groep_6 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g7` | Groep_7 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g8` | Groep_8 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g9` | Groep_9 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g10` | Groep_10 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g11` | Groep_11 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g12` | Groep_12 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g13` | Groep_13 | Verander de actieve laag of verplaats geselecteerde objecten |
+| `g14` | Groep_14 | Verander de actieve laag of verplaats geselecteerde objecten |
 
 ## 📜 Licentie
 Dit project valt onder de **MIT-licentie**.  
