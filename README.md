@@ -47,20 +47,23 @@ In de code staat een sectie met de `g`-commando’s zoals dit:
 (defun C:g2 () (ChangeLayer "Groep_2"))
 (defun C:g3 () (ChangeLayer "Groep_3"))
 (defun C:g4 () (ChangeLayer "Groep_4"))
+```
 
-###Stap 3: Pas de laagnamen aan
-Verander "Groep_1", "Groep_2", enz. naar je eigen lagen. Bijvoorbeeld:
+### Stap 3: Pas de laagnamen aan  
+Verander `"Groep_1"`, `"Groep_2"`, enz. naar je eigen lagen. Bijvoorbeeld:
 ```lisp
 (defun C:g1 () (ChangeLayer "Architectuur"))
 (defun C:g2 () (ChangeLayer "Elektriciteit"))
 (defun C:g3 () (ChangeLayer "Waterleidingen"))
 (defun C:g4 () (ChangeLayer "Verwarming"))
+```
 
-###Stap 4: Sla het bestand op en laad het opnieuw in AutoCAD
-Sla het .lsp bestand op.
-Typ AP in AutoCAD en herlaad het script.
-Test je nieuwe g-commando's!
-✅ Je hebt nu je eigen lagen gekoppeld aan de commando's! 🚀
+### Stap 4: Sla het bestand op en laad het opnieuw in AutoCAD  
+1. **Sla het `.lsp` bestand op.**  
+2. **Typ `AP` in AutoCAD** en **herlaad het script**.  
+3. **Test je nieuwe `g`-commando's!**  
+
+✅ **Je hebt nu je eigen lagen gekoppeld aan de commando's!** 🚀
 
 ## 📜 Licentie
 Dit project valt onder de **MIT-licentie**.  
